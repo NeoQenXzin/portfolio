@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<BaseLayout title="About | Quentin Pecharroman" description="Learn more about Quentin Pecharroman and his journey in web development.">
+					<div class="stack gap-20">
+						<main class="wrapper about">
+							<Hero
+								title="About"
+								tagline="Thanks for stopping by. Read below to learn more about my journey in web development."
+							>
+								<img
+									width="1553"
+									height="873"
+									src="/assets/at-work.jpg"
+									alt="Quentin Pecharroman at work on a computer"
+								/>
+							</Hero>
+				
+							<section>
+								<>
+									<section>
+											<h2 class="section-title">My Journey</h2>
+											<div class="content">
+													<p>
+														<!-- Greetings, I'm Quentin Pecharroman, a fervent junior web developer embarked on a perpetual quest for knowledge and growth. My journey into the realm of technology began out of sheer curiosity, and it's guided by a firm belief in the transformative power of code. -->
+														Hello, I'm Quentin Pecharroman, a dedicated web developer with a commitment to continuous growth and professional excellence. My journey into the world of technology is driven by a relentless pursuit of knowledge and a passion for creating impactful digital solutions.
+														I firmly believe in the transformative power of coding.
+													</p>
+											</div>
+									</section>
+							
+									<section>
+											<h2 class="section-title">Embracing Change and Learning</h2>
+											<div class="content">
+													<p>
+															My coding adventure began in 2020, marking a significant professional evolution. 
+															I undertook a professional transition into the field of coding and computing. Since then, I've achieved several significant milestones that have enriched my skill set and broadened my horizons:
+
+															- In 2020, I earned technical certifications in web integration and technical web development, providing me with a robust foundation in both frontend and backend technologies.
+
+															- 2021 marked a pivotal year, as I attained the RNCP (Répertoire National des Certifications Professionnelles) title as a web developer, validating my expertise in web and mobile development.
+
+															- Building upon this momentum, I continued to evolve as a developer and, in 2023, obtained the title rncp of software developer and designer, showcasing my commitment to mastering various facets of the field.
+													</p>
+											</div>
+									</section>
+							
+									<section>
+											<h2 class="section-title">Entrepreneurial Spirit</h2>
+											<div class="content">
+													<p>
+															Beyond academia, I co-founded NQX, an entrepreneurial project, where I developed skills in project management, client collaboration and the business aspect of technology.
+													</p>
+											</div>
+									</section>
+							
+									<section>
+											<h2 class="section-title">A Developer with Vision</h2>
+											<div class="content">
+													<p>
+															My goal is to utilize my diverse skill set, ranging from frontend to backend technologies, to create user-friendly and visually appealing web applications. This includes a deep understanding of HTML, CSS, and JavaScript, along with proficiency in modern frameworks like React and Next.js. My backend skills in PHP and Symfony, combined with my experience in databases such as MySQL and MongoDB, enable me to craft comprehensive digital solutions.
+															<br><br><br>
+
+															In every endeavor, I tackle challenges with unwavering dedication and a commitment to delivering outstanding results.  <br>
+															Let's collaborate to turn ideas into reality! ;
+													</p>
+											</div>
+								
+							
+											
+										</section>
+										<div class="contact-cv content">
+											<a href="../../public/assets/ressources/cv2023 .pdf" target="_blank">See my CV</a>
+										</div>
+
+										
+									</section>
+						</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	.contact-cv{
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		font-size: 16px;
+		margin-top: 50px;
+		width: 100%;
+		margin: auto;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
