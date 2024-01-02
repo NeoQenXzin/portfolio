@@ -16,8 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: withastro/action@v0
-        with:
-          # Les options facultatives ont été omises pour simplifier
+  #       with:
+  # Les options facultatives ont été omises pour simplifier
 
   deploy:
     needs: build
