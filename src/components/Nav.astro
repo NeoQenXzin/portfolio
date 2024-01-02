@@ -5,7 +5,7 @@ import type { iconPaths } from './IconPaths';
 
 
 // Variable pour les url en prod
-const envPath = '/portfolio/'
+const envPath = '/portfolio'
 // const envPath pour dev = '/'
 
 /** Main menu items */
@@ -53,7 +53,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 								{
 									active:
 										Astro.url.pathname === href ||
-										(href !== '{`${envPath}`}' && Astro.url.pathname.startsWith(href)),
+										(href !== envPath && Astro.url.pathname.startsWith(href)),
 								},
 							]}
 							href={href}
@@ -91,7 +91,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 								{
 									active:
 										Astro.url.pathname === href ||
-										(href !== '/' && Astro.url.pathname.startsWith(href)),
+										(href !== envPath && Astro.url.pathname.startsWith(href)),
 								},
 							]}
 							href={href}
