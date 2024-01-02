@@ -1,7 +1,8 @@
 ---
 title: kasa
 publishDate: 2020-03-02 00:00:00
-img: /assets/projets/projet-kasa.jpg
+# img: /assets/projets/projet-kasa.jpg
+img: /portfolio/assets/projets/projet-kasa.jpg
 img_alt: Demo of Kasa website
 description: |
   Student's project with react

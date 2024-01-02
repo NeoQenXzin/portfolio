@@ -3,8 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
----
 
+// Variable pour les url en prod
+const envPath = '/portfolio/'
+// const envPath pour dev = '/'
+---
 			<section>
 				<h2 class="section-title">Background</h2>
 				<BaseLayout title="About | Quentin Pecharroman" description="Learn more about Quentin Pecharroman and his journey in web development.">
@@ -17,7 +20,7 @@ import Hero from '../components/Hero.astro';
 								<img
 									width="1553"
 									height="873"
-									src="/assets/at-work.jpg"
+									src={`${envPath}/assets/at-work.jpg`}
 									alt="Quentin Pecharroman at work on a computer"
 								/>
 							</Hero>
@@ -76,7 +79,7 @@ import Hero from '../components/Hero.astro';
 											
 										</section>
 										<div class="contact-cv content">
-											<a href="../../public/assets/ressources/cv2023 .pdf" target="_blank">See my CV</a>
+											<a href={`${envPath}/assets/ressources/cv2023 .pdf`} target="_blank">See my CV</a>
 										</div>
 
 										

@@ -1,7 +1,8 @@
 ---
 title: Cook and Cool
 publishDate: 2020-08-02
-img: /assets/projets/projet-cookandcool.jpg
+img: /portfolio/assets/projets/projet-cookandcool.jpg
+# img: /assets/projets/projet-cookandcool.jpg
 img_alt: Demo of cook and cool website
 description: |
   Cook and Cool is a meal planner application

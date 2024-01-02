@@ -1,7 +1,8 @@
 ---
 title: FishEye
 publishDate: 2019-12-01 00:00:00
-img: /assets/projets/projet-fishEye.jpg
+img: /portfolio/assets/projets/projet-fishEye.jpg
+# img: /assets/projets/projet-fishEye.jpg
 img_alt: Demo of fisheyes website
 description: |
   FishEye is a sophisticated photography platform that redefines the photographer-client interaction. Crafted with JavaScript and employing the pattern factory method, this accessible platform seamlessly connects to a database, providing users with an immersive experience.

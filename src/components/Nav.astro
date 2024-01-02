@@ -3,11 +3,16 @@ import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
 
+
+// Variable pour les url en prod
+const envPath = '/portfolio/'
+// const envPath pour dev = '/'
+
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Home', href: '/' },
-	{ label: 'Work', href: '/work/' },
-	{ label: 'About', href: '/about/' },
+	{ label: 'Home', href: `${envPath}/` },
+	{ label: 'Work', href: `${envPath}/work/` },
+	{ label: 'About', href: `${envPath}/about` },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -23,7 +28,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 <nav>
 	<div class="menu-header">
-		<a href="/" class="site-title">
+		<a href={`${envPath}/`} class="site-title">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
 			 Quentin Pecharroman
 		</a>
@@ -48,7 +53,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 								{
 									active:
 										Astro.url.pathname === href ||
-										(href !== '/' && Astro.url.pathname.startsWith(href)),
+										(href !== '{`${envPath}`}' && Astro.url.pathname.startsWith(href)),
 								},
 							]}
 							href={href}

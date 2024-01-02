@@ -1,7 +1,8 @@
 ---
 title: My Medias Memorie ❣
 publishDate: 2024-01-15
-img: /assets/projets/projet-mymediasmemorie.jpg
+# img: /assets/projets/projet-mymediasmemorie.jpg
+img: /portfolio/assets/projets/projet-mymediasmemorie.jpg
 img_alt: Demo of My Medias Memorie website
 description: |
   Media Archiving Application in Vanilla PHP with Neumorphic Design.

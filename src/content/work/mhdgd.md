@@ -1,7 +1,8 @@
 ---
 title: Marseille Haidong Gumdo
 publishDate: 2021-09-04
-img: /assets/projets/projet-mhdgd.jpg
+img: /portfolio/assets/projets/projet-mhdgd.jpg
+# img: /assets/projets/projet-mhdgd.jpg
 img_alt: Demo of Samurang13 website
 description: |
   Marseille Haidong Gumdo is a dynamic website designed for the Haidong Gumdo sports association. Built with Symfony and JavaScript, the site seamlessly integrates various features to cater to both members and practitioners.
